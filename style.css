@@ -8,3 +8,18 @@
 .sarch-btn {
   width: 500px;
 }
+.food-images {
+  border-radius: 15px;
+}
+/* Card hover and Sizing */
+.card-size {
+  transition: transform 0.5s;
+}
+.card-size:hover {
+  transform: scale(1.2);
+}
+.img-hover-zoom {
+  height: 100%;
+  width: 250px;
+  overflow: hidden;
+}
