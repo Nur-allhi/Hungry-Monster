@@ -1,24 +1,20 @@
-.nav-img {
-  height: 30px;
-  width: 30px;
-}
 .sarch-bar {
-  align-items: center;
-}
-.sarch-btn {
   width: 500px;
+}
+.suggestion {
+  display: flex;
 }
 .food-images {
   border-radius: 15px;
 }
 /* Card hover and Sizing */
-.card-size {
+.card-div {
   transition: transform 0.5s;
 }
-.card-size:hover {
+.card-div:hover {
   transform: scale(1.2);
 }
-.img-hover-zoom {
+.card-img-hover {
   height: 100%;
   width: 250px;
   overflow: hidden;
