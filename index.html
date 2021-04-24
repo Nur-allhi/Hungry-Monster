@@ -40,23 +40,33 @@
         <div class="d-flex justify-content-center">
             <div class="input-group mb-3 sarch-bar">
                 <input id="sarch-input" type="text" class="form-control" aria-label="Sizing example input"
-                    aria-describedby="inputGroup-sizing-default" placeholder="sarch by name,first latter of the food">
+                    aria-describedby="inputGroup-sizing-default"
+                    placeholder="sarch by name or first latter of the food">
                 <button type="button" class="btn btn-outline-dark" id="sarch-btn">Sarch</button>
             </div>
         </div>
     </section>
     <!-- Food show -->
     <section>
-        <div class="suggestion">
-            <div>
-                <h3>Catagory suggestion</h3>
-            </div>
-            <div>
-                <div id="suggestion-food-display" class="row">
-
-                </div>
+        <div id="suggestion">
+            <p class="suggestion-tag-line">You can sarch with these keyword</p>
+            <div class="d-flex justify-content-center">
+                <ul>
+                    <li>Chicken</li>
+                    <li>Beef</li>
+                    <li>Pasta</li>
+                    <li>Seafood</li>
+                    <li>Lamb</li>
+                    <li>Pork</li>
+                    <li>Starter</li>
+                    <li>Breakfast</li>
+                </ul>
             </div>
         </div>
+
+    </section>
+    <section>
+        <p id="tag-line">Here is your Desire Food</p>
     </section>
     <section>
         <div id="display-foods" class="row">

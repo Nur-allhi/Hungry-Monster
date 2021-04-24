@@ -1,8 +1,27 @@
 .sarch-bar {
   width: 500px;
 }
-.suggestion {
+/* .suggestion {
   display: flex;
+} */
+#suggestion {
+  display: none;
+  font-size: 30px;
+  font-weight: bolder;
+}
+#tag-line {
+  display: none;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+.suggestion-tag-line {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
 }
 .food-images {
   border-radius: 15px;
