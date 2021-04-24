@@ -38,9 +38,9 @@ const displayFoods = (foods) => {
 
     const foodsAre = `
     <div class="mt-4 card-div">
-    <div class="card-img-hover img-div">
+    <div onclick="getDetails(${food.idMeal})" class="card-img-hover img-div">
     <img class="food-images card-img-top" src="${food.strMealThumb}" alt="">
-    <div>
+    </div>
     <div class="card-body">
    <h6 class="card-title text-center">${food.strMeal}</h6>
     </div>
@@ -48,5 +48,50 @@ const displayFoods = (foods) => {
     `;
     everyColumn.innerHTML = foodsAre;
     displayFoodMenu.appendChild(everyColumn);
+  });
+};
+
+// Fetch data for showing Details of the specific Food:
+const getDetails = (idOfFood) => {
+  const url = `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${idOfFood}`;
+  fetch(url)
+    .then((res) => res.json())
+    .then((data) => displayIngrideants(data.melas));
+};
+
+// Show ingrediants:
+const displayIngrideants = (foodDetails) => {
+  const ingrediants = document.getElementById("ingredient");
+  foodDetails.forEach((details) => {
+    const foodIngrediants = `
+        <div class="card">
+            <div class=" row g-0">
+                <div class="col-md-7">
+                    <img class="ingrediantsImg" src="${details.strMealThumb}" alt="...">
+                </div>
+                <div class="col-md-5">
+                    <div class="card-body">
+                        <h4 class="card-title">${details.strMeal}</h4>
+                        <h5 class="card-title">Ingredients</h5>
+                        <ul>
+                             <li>${details.strIngredient1}</li>
+                             <li>${details.strIngredient2}</li>
+                             <li>${details.strIngredient3}</li>
+                             <li>${details.strIngredient4}</li>
+                             <li>${details.strIngredient5}</li>
+                             <li>${details.strIngredient6}</li>
+                             <li>${details.strIngredient7}</li>
+                             <li>${details.strIngredient8}</li>
+                             <li>${details.strIngredient9}</li>
+                             <li>${details.strIngredient10}</li>
+                             <li>${details.strIngredient11}</li>
+                             <li>${details.strIngredient12}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+  `;
+    ingrediants.innerHTML = foodIngrediants;
   });
 };
