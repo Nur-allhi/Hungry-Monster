@@ -1,5 +1,4 @@
 body {
-  min-width: 1450px;
   background-color: rgb(197, 195, 178);
 }
 .sarch-bar {
@@ -31,24 +30,24 @@ body {
   text-align: center;
 }
 .suggestion-tag-line {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: bold;
   text-align: center;
 }
 .food-images {
-  border-radius: 15px;
+  border-radius: 0.9rem;
 }
 /* Card hover and Sizing */
 .card-div {
-  margin: 0 2rem;
+  max-width: 25rem;
   transition: transform 0.5s;
 }
 .card-div:hover {
   transform: scale(1.2);
 }
 .card-img-hover {
-  height: 100%;
-  width: 300px;
+  height: 14.5rem;
+  width: 14rem;
   overflow: hidden;
 }
 #ingredient {
@@ -57,8 +56,8 @@ body {
   max-width: 50rem;
 }
 .ingrediantsImg {
-  width: 400px;
-  height: 480px;
+  width: 25rem;
+  height: 26rem;
   border-radius: 1.5rem;
 }
 .ing-card {
