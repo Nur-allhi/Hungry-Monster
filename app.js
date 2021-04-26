@@ -38,7 +38,7 @@ const displayFoods = (foods) => {
 
     const foodsAre = `
     <div class="mt-4 card-div">
-    <div onclick="getDetails(${food.idMeal})" class="card-img-hover img-div">
+    <div onclick="getDetails('${food.idMeal}')" class="card-img-hover img-div">
     <img class="food-images card-img-top" src="${food.strMealThumb}" alt="">
     </div>
     <div class="card-body">
@@ -56,7 +56,7 @@ const getDetails = (idOfFood) => {
   const url = `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${idOfFood}`;
   fetch(url)
     .then((res) => res.json())
-    .then((data) => displayIngrideants(data.melas));
+    .then((data) => displayIngrideants(data.meals));
 };
 
 // Show ingrediants:
