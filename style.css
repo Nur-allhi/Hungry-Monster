@@ -39,6 +39,7 @@ body {
 }
 /* Card hover and Sizing */
 .card-div {
+  margin: 0 2rem;
   transition: transform 0.5s;
 }
 .card-div:hover {
